@@ -5,15 +5,12 @@ def attack(char_name, char_class):
     if char_class == 'warrior':
         return (f'{char_name} нанёс урон противнику равный '
                 f'{5 + randint(3, 5)}')
-
     if char_class == 'mage':
         return (f'{char_name} нанёс урон противнику равный '
                 f' {5 + randint(5, 10)}')
-
     if char_class == 'healer':
         return (f'{char_name} нанёс урон противнику равный '
                 f'{5 + randint(-3, -1)}')
-
     return (f'{char_name} не нанёс урон')
 
 
@@ -21,11 +18,9 @@ def defence(char_name, char_class):
     if char_class == 'warrior':
         return (f'{char_name} блокировал '
                 f'{10 + randint(5, 10)} урона')
-
     if char_class == 'mage':
         return (f'{char_name} блокировал '
                 f'{10 + randint(-2, 2)} урона')
-
     if char_class == 'healer':
         return (f'{char_name} блокировал '
                 f'{10 + randint(2, 5)} урона')
